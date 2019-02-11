@@ -1,10 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { render } from 'react-dom';
 import * as serviceWorker from './serviceWorker';
+import { LoadsProvider } from 'react-loads';
+import { Router } from '@reach/router';
+import { ThemeProvider } from 'fannypack';
+import App from './App';
+render(
+  <LoadsProvider>
+    <ThemeProvider>
+      <Router>
+        <App path="/" />
+      </Router>
+    </ThemeProvider>
+  </LoadsProvider>,
 
-ReactDOM.render(<App />, document.getElementById('root'));
+  document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

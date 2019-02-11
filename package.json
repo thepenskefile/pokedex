@@ -3,15 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reach/router": "1.1.1",
+    "eslint-config-react-app": "3.0.6",
+    "eslint-plugin-flowtype": "3.0.0",
+    "eslint-plugin-jsx-a11y": "6.2.0",
+    "eslint-plugin-prettier": "3.0.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "0.0.0",
+    "fannypack": "4.6.1",
+    "flow-bin": "^0.92.1",
+    "prettier": "1.14.3",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-scripts": "2.1.4"
+    "react-loads": "6.0.1",
+    "react-scripts": "2.1.4",
+    "react-test-renderer": "^16.8.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow"
   },
   "eslintConfig": {
     "extends": "react-app"
