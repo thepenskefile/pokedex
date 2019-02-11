@@ -2,6 +2,7 @@
   "name": "pokedex",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://thepenskefile.github.io/pokedex/",
   "dependencies": {
     "@reach/router": "1.1.1",
     "eslint-config-react-app": "3.0.6",
@@ -25,7 +26,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "flow": "flow",
-    "test:test": "yarn flow && yarn test"
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "test:test": "yarn flow && yarn lint && yarn test"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -5,6 +5,6 @@ type Props = {};
 
 export default class Hello extends Component<Props> {
   render = () => {
-    return <Fragment>hi in hello test</Fragment>;
+    return <Fragment>hi in hello</Fragment>;
   };
 }
