@@ -5,9 +5,11 @@ import { LoadsProvider } from 'react-loads';
 import { Router } from '@reach/router';
 import { ThemeProvider } from 'fannypack';
 import App from './App';
+import { theme } from './theme';
+
 render(
   <LoadsProvider>
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Router>
         <App path="/" />
       </Router>
