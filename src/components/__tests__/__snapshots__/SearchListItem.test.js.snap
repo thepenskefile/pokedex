@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<a
+  href="/pokemon/mockId"
+  onClick={[Function]}
+>
+  <div
+    className="sc-bdVaJa inEjad Box-sc-6sssmg-0 inpIDs"
+  >
+    <div
+      className="styled-otaduv-0 wkSBA Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__Column-sc-1lmgd0f-0 esYmZI Box-sc-6sssmg-0 inpIDs"
+      >
+        mockIndex
+      </div>
+      <div
+        className="styled__Column-sc-1lmgd0f-0 RTVYE Box-sc-6sssmg-0 inpIDs"
+      >
+        mockName
+      </div>
+    </div>
+  </div>
+</a>
+`;

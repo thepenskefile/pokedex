@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <div
+    className="Field-jd7v3e-0 styled-ixmo9v-5 hUKvyd Box-sc-6sssmg-0 inpIDs"
+    display="inline-block"
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <div />
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__InputWrapper-kl4ffb-2 ibPqmr Box-sc-6sssmg-0 inpIDs"
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoFocus={false}
+        className="sc-bdVaJa foEZIc styled-kl4ffb-3 fZCAZu Input-tpacev-0 igsxQX Box-sc-6sssmg-0 inpIDs"
+        disabled={false}
+        multiple={false}
+        placeholder="search"
+        style={
+          Object {
+            "marginTop": "minor-2",
+          }
+        }
+        type="text"
+      />
+    </div>
+    <div />
+  </div>,
+  <div
+    className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "marginLeft": "10px",
+        "textAlign": "left",
+        "width": "96%",
+      }
+    }
+    width="96%"
+  />,
+]
+`;

@@ -5,6 +5,7 @@
   "homepage": "https://thepenskefile.github.io/pokedex/",
   "dependencies": {
     "@reach/router": "1.1.1",
+    "axios": "^0.18.0",
     "eslint-config-react-app": "3.0.6",
     "eslint-plugin-flowtype": "3.0.0",
     "eslint-plugin-jsx-a11y": "6.2.0",
@@ -28,7 +29,9 @@
     "flow": "flow",
     "lint": "eslint src/",
     "lint:fix": "eslint src/ --fix",
-    "test:test": "yarn flow && yarn lint && yarn test"
+    "test:test": "yarn flow && yarn lint && yarn test",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,5 +41,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
