@@ -6,13 +6,17 @@ import { Router } from '@reach/router';
 import { ThemeProvider } from 'fannypack';
 import App from './App';
 import { theme } from './theme';
-
+import MainWrapper from './containers/MainWrapper';
+import PokemonCategoryContainer from './containers/categories/PokemonCategoryContainer';
 render(
   <LoadsProvider>
     <ThemeProvider theme={theme}>
-      <Router>
-        <App path="/" />
-      </Router>
+      <MainWrapper>
+        <Router>
+          <App path="/" />
+          <PokemonCategoryContainer path="pokemon/:id" />
+        </Router>
+      </MainWrapper>
     </ThemeProvider>
   </LoadsProvider>,
 

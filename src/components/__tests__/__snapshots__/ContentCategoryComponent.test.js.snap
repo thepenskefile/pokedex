@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
+>
+  <div
+    className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled-sc-18btutf-0 gCQOzL Box-sc-6sssmg-0 inpIDs"
+    spacing="major-1"
+  >
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gysPkN Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        pokemon
+      </div>
+    </div>
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gysPkN Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        berries
+      </div>
+    </div>
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gysPkN Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        items
+      </div>
+    </div>
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gysPkN Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        locations
+      </div>
+    </div>
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gysPkN Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        machines
+      </div>
+    </div>
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gysPkN Box-sc-6sssmg-0 inpIDs"
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        moves
+      </div>
+    </div>
+  </div>
+</div>
+`;
