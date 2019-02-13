@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Box, Tag } from 'fannypack';
+import { Box } from 'fannypack';
 
 import './App.css';
 
