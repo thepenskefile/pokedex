@@ -22,7 +22,7 @@ const SearchResultsComponent = ({ response, isLoading, isSuccess, isError, error
           {response.length === 0 && <div>No results</div>}
           {response.map((item, index) => (
             <SearchListItem
-              key={item}
+              key={item.name}
               name={item.name}
               id={item.url.replace(/\D/g, '').substring(item.url.replace(/\D/g, '').length - 1)}
               index={++index}

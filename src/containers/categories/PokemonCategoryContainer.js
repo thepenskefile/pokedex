@@ -12,7 +12,6 @@ export default class PokemonCategoryContainer extends Component<Props> {
   getPokemon = async () => {
     const { id } = this.props;
     const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
-    console.log('RESPONSE IS: ', response);
     return response.data;
   };
   render = () => {
