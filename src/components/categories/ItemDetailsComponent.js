@@ -8,15 +8,15 @@ type Props = {
   data: Object
 };
 
-const PokemonDetailsComponent = ({ data }: Props) => (
+const ItemDetailsComponent = ({ data }: Props) => (
   <Container textAlign="left" marginLeft="10px" width="96%">
     <Fragment>
       <Box>Name: {data.name}</Box>
-      <Box>Height: {data.height}</Box>
-      <Box>Weight: {data.weight}</Box>
-      <Image src={data.sprites.front_default} />
+      <Box>Fling power: {data.fling_power}</Box>
+      <Box>Effect: {data.effect_entries[0].effect}</Box>
+      <Image src={data.sprites.default} />
     </Fragment>
   </Container>
 );
 
-export default PokemonDetailsComponent;
+export default ItemDetailsComponent;

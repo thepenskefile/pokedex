@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+  style={
+    Object {
+      "marginLeft": "10px",
+      "textAlign": "left",
+      "width": "96%",
+    }
+  }
+  width="96%"
+>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Name: 
+    mockName
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Fling power: 
+    mockFlingPower
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Effect: 
+    mockEffect
+  </div>
+  <img
+    className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
+    src="mockImageUrl"
+  />
+</div>
+`;

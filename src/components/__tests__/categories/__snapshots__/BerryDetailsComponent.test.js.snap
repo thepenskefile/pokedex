@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+  style={
+    Object {
+      "marginLeft": "10px",
+      "textAlign": "left",
+      "width": "96%",
+    }
+  }
+  width="96%"
+>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Name: 
+    mockName
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Growth Time: 
+    mockGrowthTime
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Max Harvest: 
+    mockMaxHarvest
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Size: 
+    mockSize
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Smoothness: 
+    mockSmoothness
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+  >
+    Soil dryness: 
+    mockSoilDryness
+  </div>
+</div>
+`;
