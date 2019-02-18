@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <a
-  href="/pokemon/mockId"
+  href="/undefined/mockId"
   onClick={[Function]}
 >
   <div

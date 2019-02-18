@@ -1,5 +1,5 @@
 import React from 'react';
-import PokemonCategoryContainer from '../categories/PokemonCategoryContainer';
+import ItemsCategoryComponent from '../../categories/ItemsCategoryContainer';
 import renderer from 'react-test-renderer';
 
 const defaultProps = {
@@ -7,7 +7,7 @@ const defaultProps = {
 };
 
 it('renders correctly', () => {
-  const component = renderer.create(<PokemonCategoryContainer {...defaultProps} />);
+  const component = renderer.create(<ItemsCategoryComponent {...defaultProps} />);
   let tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,48 +1,55 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-Array [
-  <div
-    className="Field-jd7v3e-0 styled-ixmo9v-5 hUKvyd Box-sc-6sssmg-0 inpIDs"
-    display="inline-block"
-    style={
-      Object {
-        "display": "inline-block",
-      }
+<div
+  className="Box-sc-6sssmg-0 inpIDs"
+  style={
+    Object {
+      "marginLeft": "7px",
+      "marginRight": "7px",
     }
+  }
+>
+  <div
+    className="Field-jd7v3e-0 styled-ixmo9v-5 iZvzCO Box-sc-6sssmg-0 inpIDs"
   >
-    <div />
     <div
-      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__InputWrapper-kl4ffb-2 ibPqmr Box-sc-6sssmg-0 inpIDs"
+      className="sc-bdVaJa kulbDP styled__InputWrapper-kl4ffb-2 Rsbvv Box-sc-6sssmg-0 inpIDs"
     >
       <input
         aria-invalid={false}
         aria-required={false}
         autoFocus={false}
-        className="sc-bdVaJa foEZIc styled-kl4ffb-3 fZCAZu Input-tpacev-0 igsxQX Box-sc-6sssmg-0 inpIDs"
+        className="styled-kl4ffb-3 caPFUM Input-tpacev-0 igsxQX Box-sc-6sssmg-0 inpIDs"
         disabled={false}
         multiple={false}
         placeholder="search"
-        style={
-          Object {
-            "marginTop": "minor-2",
-          }
-        }
         type="text"
       />
     </div>
     <div />
-  </div>,
+  </div>
   <div
     className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
     style={
       Object {
-        "marginLeft": "10px",
+        "marginTop": "20px",
         "textAlign": "left",
-        "width": "96%",
       }
     }
-    width="96%"
-  />,
-]
+  >
+    <div
+      className="Box-sc-6sssmg-0 inpIDs"
+      height="70vh"
+      onScroll={[Function]}
+      style={
+        Object {
+          "height": "70vh",
+          "overflowX": "hidden",
+          "overflowY": "scroll",
+        }
+      }
+    />
+  </div>
+</div>
 `;
