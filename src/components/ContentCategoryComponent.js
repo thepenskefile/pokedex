@@ -1,20 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { Link } from '@reach/router';
 import { CONTENT_CATEGORY_TYPES } from '../_types/content_category_types';
-import { Button, Set, Container } from 'fannypack';
+import { Menu, Flex } from 'fannypack';
 
 type Props = { selectCategory: Function };
 
-const ContentCategoryContainer = ({ selectCategory }: Props) => (
-  <Container textAlign="center">
-    <Set spacing="major-1">
-      {Object.keys(CONTENT_CATEGORY_TYPES).map(category => (
-        <Button key={category} size="small" onClick={() => selectCategory(category)}>
-          {CONTENT_CATEGORY_TYPES[category].toUpperCase()}
-        </Button>
-      ))}
-    </Set>
-  </Container>
-);
+const ContentCategoryComponent = ({ selectCategory }: Props) => {
+  const [selectedCategory, setCategory] = useState(CONTENT_CATEGORY_TYPES.pokemon);
 
-export default ContentCategoryContainer;
+  function handleOnClickCategory(category) {
+    setCategory(category);
+    selectCategory(category);
+  }
+  return (
+    <Flex justifyContent="center">
+      <Menu isHorizontal>
+        <Menu.Group>
+          {Object.keys(CONTENT_CATEGORY_TYPES).map(category => (
+            <Menu.Item
+              key={category}
+              size="small"
+              isActive={selectedCategory === category}
+              onClick={() => handleOnClickCategory(category)}
+            >
+              {CONTENT_CATEGORY_TYPES[category].toUpperCase()}
+            </Menu.Item>
+          ))}
+        </Menu.Group>
+      </Menu>
+    </Flex>
+  );
+};
+
+export default ContentCategoryComponent;

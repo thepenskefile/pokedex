@@ -1,6 +1,5 @@
 // @flow
 import React, { Component } from 'react';
-import TextInput from '../UI/TextInput';
 import SearchResultsComponent from '../components/SearchResultsComponent';
 import Loads from 'react-loads';
 import axios from 'axios';
@@ -10,18 +9,33 @@ type Props = {
   category: string
 };
 
-export default class SearchContainer extends Component<Props> {
+type State = {
+  singleFetch: boolean
+};
+
+export default class SearchContainer extends Component<Props, State> {
+  state = { singleFetch: true };
   fetchItems = async () => {
     const { category } = this.props;
-
     const response = await axios.get(`https://pokeapi.co/api/v2/${category}/`);
     return response.data;
   };
 
   fetchMoreItems = async (url: string, prevItems: Array<Object>) => {
-    const response = await axios.get(url);
-    const newItems = [...prevItems, ...response.data.results];
-    response.data.results = newItems;
+    const { category } = this.props;
+    if (url.length > 0) {
+      const response = await axios.get(url);
+      if (prevItems.length !== 0) {
+        const newItems = [...prevItems, ...response.data.results];
+        response.data.results = newItems;
+        this.setState({ singleFetch: false });
+        return response.data;
+      }
+      this.setState({ singleFetch: false });
+      return { results: [response.data] };
+    }
+    const response = await axios.get(`https://pokeapi.co/api/v2/${category}/`);
+    this.setState({ singleFetch: true });
     return response.data;
   };
 
@@ -29,7 +43,6 @@ export default class SearchContainer extends Component<Props> {
     const { category } = this.props;
     return (
       <Box marginLeft="7px" marginRight="7px">
-        <TextInput isFullWidth placeholder="search" />
         <Loads contextKey={category} loadOnMount load={this.fetchItems} update={this.fetchMoreItems}>
           {({ update, isLoading, isSuccess, isError, error, response }) => (
             <SearchResultsComponent
@@ -40,6 +53,7 @@ export default class SearchContainer extends Component<Props> {
               error={error}
               category={category}
               update={update}
+              singleFetch={this.state.singleFetch}
             />
           )}
         </Loads>
