@@ -7,7 +7,9 @@ const defaultProps = {
     name: 'mockName',
     weight: 'mockWeight',
     height: 'mockHeight',
-    sprites: { front_default: 'mockImageUrl' }
+    sprites: { front_default: 'mockImageUrl' },
+    types: [{ type: { name: 'mockTypeName' } }],
+    stats: [{ base_stat: 'mockBaseStat', effort: 'mockEffort', stat: { name: 'mockStatName', url: 'mockStatUrl' } }]
   }
 };
 

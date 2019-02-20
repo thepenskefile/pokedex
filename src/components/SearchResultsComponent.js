@@ -45,13 +45,13 @@ export default class SearchResultsComponent extends Component<Props, State> {
     }
   };
 
-  handleSubmitSearch = e => {
+  handleSubmitSearch = (e: any) => {
     e.preventDefault();
     const { category, update } = this.props;
     update(`https://pokeapi.co/api/v2/${category}/${e.target.search.value}/`, []);
   };
 
-  handleInputSearchText = e => {
+  handleInputSearchText = (e: any) => {
     if (e.target.value) {
       this.setState({ hasInputText: true });
     } else {
@@ -61,6 +61,7 @@ export default class SearchResultsComponent extends Component<Props, State> {
 
   handleClearSearchText = () => {
     const { update, singleFetch } = this.props;
+    // $FlowFixMe
     this.inputSearchText.current.value = '';
     if (!singleFetch) {
       update();
@@ -89,7 +90,7 @@ export default class SearchResultsComponent extends Component<Props, State> {
         </form>
         <Box
           ref={this.searchBar}
-          height="100vh"
+          maxHeight="100vh"
           marginTop="10px"
           onScroll={this.handleScroll}
           overflowX="hidden"
@@ -111,6 +112,7 @@ export default class SearchResultsComponent extends Component<Props, State> {
                 ))}
             </Box>
           )}
+          {/* $FlowFixMe */}
           {isError && <Box>No items found with the name {this.inputSearchText.current.value}</Box>}
         </Box>
       </Container>
