@@ -13,26 +13,198 @@ exports[`renders correctly 1`] = `
   width="96%"
 >
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "alignItems": "flex-end",
+      }
+    }
   >
-    Name: 
-    mockName
+    <h1
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      MockName
+    </h1>
+    <img
+      className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
+      src="mockImageUrl"
+    />
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    display="block"
+    spacing="major-2"
+    style={
+      Object {
+        "display": "block",
+        "marginBottom": "20px",
+      }
+    }
   >
-    Height: 
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Height: 
+    </strong>
     mockHeight
-  </div>
-  <div
-    className="Box-sc-6sssmg-0 inpIDs"
-  >
-    Weight: 
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Weight: 
+    </strong>
     mockWeight
   </div>
-  <img
-    className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
-    src="mockImageUrl"
-  />
+  <div
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    spacing="minor-2"
+    style={
+      Object {
+        "marginBottom": "20px",
+      }
+    }
+  >
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gajwsF Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "backgroundColor": "mockTypeName",
+        }
+      }
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        mockTypeName
+      </div>
+    </div>
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "marginTop": "40px",
+      }
+    }
+  >
+    <h5
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      Stats
+    </h5>
+    <div
+      className="styled-otaduv-0 wkSBA Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "marginTop": "20px",
+        }
+      }
+    >
+      <div
+        className="styled__Column-sc-1lmgd0f-0 bXAOxK Box-sc-6sssmg-0 inpIDs"
+        display="inline-block"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <div
+          className="Box-sc-6sssmg-0 inpIDs"
+        >
+          <svg
+            className="sc-bdVaJa fJZkWb"
+            viewBox="0 0 36 36"
+          >
+            <path
+              className="sc-bwzfXH fUxNdF"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              className="sc-bxivhb boxNwV"
+              color={[Function]}
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text
+              className="sc-htpNat jJPiwm"
+              x="18"
+              y="20.35"
+            >
+              mockBaseStat
+            </text>
+          </svg>
+          <div
+            className="Box-sc-6sssmg-0 inpIDs"
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
+            mockStatName
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "marginTop": "40px",
+      }
+    }
+  >
+    <h5
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      Sprites
+    </h5>
+    <div
+      className="styled-otaduv-0 wkSBA Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      <div
+        className="styled__Column-sc-1lmgd0f-0 jUBHv Box-sc-6sssmg-0 inpIDs"
+        display="inline-block"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <img
+          className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
+          src="mockImageUrl"
+        />
+        <span
+          className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+          display="block"
+          style={
+            Object {
+              "color": undefined,
+              "display": "block",
+            }
+          }
+        >
+          front default
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
 `;

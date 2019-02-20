@@ -26,7 +26,7 @@ const SearchListItem = ({ index, name, id, category }: Props) => (
     <StyledListItem>
       <Columns minBreakpoint="mobile">
         <Column spread={2}>{index}</Column>
-        <Column spread={10}>{name}</Column>
+        <Column spread={10}>{name.charAt(0).toUpperCase() + name.slice(1)}</Column>
       </Columns>
     </StyledListItem>
   </Link>

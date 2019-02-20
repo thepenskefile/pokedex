@@ -32,7 +32,7 @@ export default class MainWrapper extends Component<Props, State> {
         <Heading textAlign="center">Pokedex</Heading>
         <ContentCategoryComponent selectCategory={this.selectCategory} />
         <Columns marginTop="20px" marginBottom="0px" isGapless>
-          <Column spread={3} backgroundColor="white700" paddingTop="10px">
+          <Column spread={3} backgroundColor="white" paddingTop="10px">
             <SearchContainer category={this.state.searchCategory} />
           </Column>
           <Column padding="20px" backgroundColor="white">

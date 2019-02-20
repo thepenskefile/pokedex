@@ -19,7 +19,7 @@ exports[`renders correctly 1`] = `
       <div
         className="styled__Column-sc-1lmgd0f-0 RTVYE Box-sc-6sssmg-0 inpIDs"
       >
-        mockName
+        MockName
       </div>
     </div>
   </div>

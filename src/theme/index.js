@@ -12,6 +12,13 @@ export const theme = {
     rock: rgb(99, 98, 84),
     ground: rgb(145, 115, 49),
     fighting: rgb(218, 154, 119),
-    dark: rgb(49, 50, 75)
+    dark: rgb(49, 50, 75),
+    flying: rgb(173, 216, 230),
+    normal: rgb(72, 90, 109),
+    fairy: rgb(230, 130, 149),
+    ghost: rgb(108, 90, 147),
+    steel: rgb(184, 184, 206),
+    ice: rgb(166, 214, 215),
+    dragon: rgb(104, 66, 239)
   }
 };
