@@ -3,7 +3,48 @@
 import React, { Component } from 'react';
 import SearchListItem from './SearchListItem';
 import { CONTENT_CATEGORY_TYPES } from '../_types/content_category_types';
-import { Spinner, Container, Box, Group, Input, Button, Heading } from 'fannypack';
+import { Spinner, Container, Box, Group, Input, Button, palette, styled } from 'fannypack';
+
+const SearchButton = styled(Button)`
+  border: none;
+  background-color: ${palette('white800')};
+  border-radius: 0;
+  &:hover {
+    background-color: ${palette('white600')};
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+`;
+
+const CancelButton = styled(Button)`
+  border: none;
+  background-color: ${palette('white700')};
+  border-radius: 0;
+  &:hover {
+    background-color: ${palette('white700')};
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+`;
+
+const SearchInput = styled(Input)`
+  & input {
+    border: none;
+    outline: none;
+    background-color: ${palette('white700')};
+    border-radius: 0;
+    box-shadow: none;
+  }
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+`;
 
 type Props = {
   response: Object,
@@ -66,26 +107,24 @@ export default class SearchResultsComponent extends Component<Props, State> {
     if (!singleFetch) {
       update();
     }
+    this.setState({ hasInputText: false });
   };
 
   render = () => {
     const { response, isLoading, isSuccess, isError, error, category } = this.props;
     return (
       <Container textAlign="left" marginTop="10px">
-        <Heading use="h4">
-          {CONTENT_CATEGORY_TYPES[category].charAt(0).toUpperCase() + CONTENT_CATEGORY_TYPES[category].slice(1)}
-        </Heading>
         <form onSubmit={this.handleSubmitSearch}>
           <Group>
-            <Input
+            <SearchInput
               elementRef={this.inputSearchText}
               isFullWidth
               name="search"
               onChange={this.handleInputSearchText}
               placeholder={`search for ${CONTENT_CATEGORY_TYPES[category]}`}
             />
-            {this.state.hasInputText && <Button onClick={this.handleClearSearchText}>X</Button>}
-            <Button type="submit">Search</Button>
+            {this.state.hasInputText && <CancelButton onClick={this.handleClearSearchText}>X</CancelButton>}
+            <SearchButton type="submit">SEARCH</SearchButton>
           </Group>
         </form>
         <Box

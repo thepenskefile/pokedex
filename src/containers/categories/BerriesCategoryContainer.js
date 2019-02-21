@@ -12,6 +12,15 @@ export default class BerriesCategoryContainer extends Component<Props> {
   getBerry = async () => {
     const { id } = this.props;
     const response = await axios.get(`https://pokeapi.co/api/v2/berry/${id}`);
+
+    let flavors = [];
+
+    for (var i = 0; i < response.data.flavors.length; i++) {
+      if (response.data.flavors[i].potency > 0) {
+        flavors.push(response.data.flavors[i]);
+      }
+    }
+    response.data.flavors = flavors;
     return response.data;
   };
   render = () => {

@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://thepenskefile.github.io/pokedex/",
   "dependencies": {
+    "@fortawesome/free-regular-svg-icons": "^5.7.2",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
     "@reach/router": "1.1.1",
     "axios": "^0.18.0",
     "eslint-config-react-app": "3.0.6",

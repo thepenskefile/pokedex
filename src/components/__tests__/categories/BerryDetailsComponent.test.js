@@ -9,7 +9,9 @@ const defaultProps = {
     max_harvest: 'mockMaxHarvest',
     size: 'mockSize',
     smoothness: 'mockSmoothness',
-    soil_dryness: 'mockSoilDryness'
+    soil_dryness: 'mockSoilDryness',
+    item: { name: 'mockItemName' },
+    flavors: [{ flavor: { name: 'sour' }, potency: '10' }]
   }
 };
 

@@ -1,13 +1,13 @@
 // @flow
 import React, { Component } from 'react';
 import { type Node } from 'react';
-import { Heading, Column, Columns, styled, Box, palette } from 'fannypack';
+import { Heading, Column, Columns, styled, Box, palette, Divider } from 'fannypack';
 import ContentCategoryComponent from '../../components/ContentCategoryComponent';
 
 import SearchContainer from '../SearchContainer';
 
 const Main = styled(Box)`
-  background-color: ${palette('text100')};
+  background-color: 'white';
   & a {
     text-decoration: none;
     color: ${palette('text')};
@@ -31,6 +31,7 @@ export default class MainWrapper extends Component<Props, State> {
       <Main>
         <Heading textAlign="center">Pokedex</Heading>
         <ContentCategoryComponent selectCategory={this.selectCategory} />
+        <Divider />
         <Columns marginTop="20px" marginBottom="0px" isGapless>
           <Column spread={3} backgroundColor="white" paddingTop="10px">
             <SearchContainer category={this.state.searchCategory} />

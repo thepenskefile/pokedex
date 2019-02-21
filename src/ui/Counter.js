@@ -37,6 +37,7 @@ const Counter = styled.path`
 
 type Props = {
   percentage: Object,
+  max: Number,
   showPercentage: boolean,
   label: string,
   color: string
