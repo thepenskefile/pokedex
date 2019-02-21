@@ -11,7 +11,7 @@ type Props = { id: string };
 export default class ItemsCategoryContainer extends Component<Props> {
   getItem = async () => {
     const { id } = this.props;
-    const response = await axios.get(`https://pokeapi.co/api/v2/berry/${id}`);
+    const response = await axios.get(`https://pokeapi.co/api/v2/item/${id}`);
     return response.data;
   };
   render = () => {

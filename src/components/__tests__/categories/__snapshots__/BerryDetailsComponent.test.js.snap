@@ -13,40 +13,234 @@ exports[`renders correctly 1`] = `
   width="96%"
 >
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
   >
-    Name: 
-    mockName
+    <h1
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      MockName
+    </h1>
+    <img
+      className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
+      src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/mockItemName.png"
+    />
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    display="block"
+    spacing="major-2"
+    style={
+      Object {
+        "display": "block",
+        "marginBottom": "20px",
+      }
+    }
   >
-    Growth Time: 
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Growth time: 
+    </strong>
     mockGrowthTime
-  </div>
-  <div
-    className="Box-sc-6sssmg-0 inpIDs"
-  >
-    Max Harvest: 
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Max harvest: 
+    </strong>
     mockMaxHarvest
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    spacing="minor-2"
+    style={
+      Object {
+        "marginBottom": "20px",
+      }
+    }
   >
-    Size: 
-    mockSize
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gajwsF Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "backgroundColor": "sour",
+        }
+      }
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        sour
+      </div>
+    </div>
   </div>
   <div
     className="Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "marginTop": "40px",
+      }
+    }
   >
-    Smoothness: 
-    mockSmoothness
-  </div>
-  <div
-    className="Box-sc-6sssmg-0 inpIDs"
-  >
-    Soil dryness: 
-    mockSoilDryness
+    <div
+      className="styled-otaduv-0 wkSBA Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "marginBottom": "20px",
+          "marginTop": "20px",
+        }
+      }
+    >
+      <div
+        className="styled__Column-sc-1lmgd0f-0 giZWgM Box-sc-6sssmg-0 inpIDs"
+        display="inline-block"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <div
+          className="Box-sc-6sssmg-0 inpIDs"
+        >
+          <svg
+            className="sc-bdVaJa fJZkWb"
+            viewBox="0 0 36 36"
+          >
+            <path
+              className="sc-bwzfXH fUxNdF"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              className="sc-bxivhb jsuHaH"
+              color={[Function]}
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text
+              className="sc-htpNat jJPiwm"
+              x="18"
+              y="20.35"
+            >
+              NaN
+            </text>
+          </svg>
+          <div
+            className="Box-sc-6sssmg-0 inpIDs"
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
+            size
+          </div>
+        </div>
+      </div>
+      <div
+        className="styled__Column-sc-1lmgd0f-0 giZWgM Box-sc-6sssmg-0 inpIDs"
+        display="inline-block"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <div
+          className="Box-sc-6sssmg-0 inpIDs"
+        >
+          <svg
+            className="sc-bdVaJa fJZkWb"
+            viewBox="0 0 36 36"
+          >
+            <path
+              className="sc-bwzfXH fUxNdF"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              className="sc-bxivhb jsuHaH"
+              color={[Function]}
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text
+              className="sc-htpNat jJPiwm"
+              x="18"
+              y="20.35"
+            >
+              NaN
+            </text>
+          </svg>
+          <div
+            className="Box-sc-6sssmg-0 inpIDs"
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
+            smoothness
+          </div>
+        </div>
+      </div>
+      <div
+        className="styled__Column-sc-1lmgd0f-0 giZWgM Box-sc-6sssmg-0 inpIDs"
+        display="inline-block"
+        style={
+          Object {
+            "display": "inline-block",
+          }
+        }
+      >
+        <div
+          className="Box-sc-6sssmg-0 inpIDs"
+        >
+          <svg
+            className="sc-bdVaJa fJZkWb"
+            viewBox="0 0 36 36"
+          >
+            <path
+              className="sc-bwzfXH fUxNdF"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              className="sc-bxivhb hKYVre"
+              color={[Function]}
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <text
+              className="sc-htpNat jJPiwm"
+              x="18"
+              y="20.35"
+            >
+              mockSoilDryness
+            </text>
+          </svg>
+          <div
+            className="Box-sc-6sssmg-0 inpIDs"
+            style={
+              Object {
+                "textAlign": "center",
+              }
+            }
+          >
+            soil dryness
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;

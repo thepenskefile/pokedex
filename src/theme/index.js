@@ -19,6 +19,11 @@ export const theme = {
     ghost: rgb(108, 90, 147),
     steel: rgb(184, 184, 206),
     ice: rgb(166, 214, 215),
-    dragon: rgb(104, 66, 239)
+    dragon: rgb(104, 66, 239),
+    spicy: rgb(231, 112, 56),
+    dry: rgb(88, 122, 240),
+    bitter: rgb(171, 183, 107),
+    sweet: rgb(230, 130, 149),
+    sour: rgb(228, 208, 79)
   }
 };
