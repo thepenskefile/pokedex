@@ -3,5 +3,10 @@
 exports[`renders correctly 1`] = `
 <div
   className="Box-sc-6sssmg-0 inpIDs"
+  style={
+    Object {
+      "textAlign": "center",
+    }
+  }
 />
 `;

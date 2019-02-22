@@ -9,7 +9,7 @@ type Props = {
 };
 
 const PokemonDetailsComponent = ({ data }: Props) => (
-  <Container textAlign="left" marginLeft="10px" width="96%">
+  <Container textAlign="left" marginLeft="10px" width="100%" height="70vh" overflowY="scroll" overflowX="hidden">
     <Flex alignItems="flex-end">
       <Heading>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</Heading>
       <Image src={data.sprites.front_default} />

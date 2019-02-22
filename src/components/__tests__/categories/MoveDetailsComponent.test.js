@@ -7,7 +7,10 @@ const defaultProps = {
     name: 'mockName',
     accuracy: 'mockAccuracy',
     pp: 'mockPP',
-    power: 'mockPower'
+    power: 'mockPower',
+    contest_type: { name: 'mockContestTypeName' },
+    damage_class: { name: 'mockDamageClassName' },
+    type: { name: 'mockTypeName' }
   }
 };
 

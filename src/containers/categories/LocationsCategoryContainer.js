@@ -20,7 +20,11 @@ export default class LocationsCategoryContainer extends Component<Props> {
       <Loads contextKey={`locations/${id}`} loadOnMount load={this.getLocation}>
         {({ update, isLoading, isSuccess, isError, error, response }) => (
           <Box>
-            {isLoading && <Spinner size="large" />}
+            {isLoading && (
+              <Box textAlign="center">
+                <Spinner margin="5px" marginTop="20px" textAlign="center" size="large" color="text" />
+              </Box>
+            )}
             {isSuccess && (
               <Fragment>
                 {response.length === 0 && <Box>No results</Box>}

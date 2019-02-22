@@ -13,15 +13,65 @@ exports[`renders correctly 1`] = `
   width="96%"
 >
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "alignItems": "flex-start",
+        "marginBottom": "10px",
+      }
+    }
   >
-    Name: 
-    mockName
+    <h1
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      MockName
+    </h1>
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    display="block"
+    spacing="major-2"
+    style={
+      Object {
+        "display": "block",
+        "marginBottom": "20px",
+      }
+    }
   >
-    Region: 
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Region: 
+    </strong>
+  </div>
+  <div
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    spacing="minor-2"
+    style={
+      Object {
+        "marginBottom": "20px",
+      }
+    }
+  >
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gajwsF Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "backgroundColor": "generation-",
+        }
+      }
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        gen 
+      </div>
+    </div>
   </div>
 </div>
 `;

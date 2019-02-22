@@ -13,26 +13,140 @@ exports[`renders correctly 1`] = `
   width="96%"
 >
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
   >
-    Name: 
-    mockName
+    <h1
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      MockName
+    </h1>
+    <img
+      className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
+      src="mockImageUrl"
+    />
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    display="block"
+    spacing="major-2"
+    style={
+      Object {
+        "display": "block",
+        "marginBottom": "20px",
+      }
+    }
   >
-    Fling power: 
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Fling Power: 
+    </strong>
     mockFlingPower
+    <strong
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "color": undefined,
+        }
+      }
+    >
+      Cost: 
+    </strong>
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    spacing="minor-2"
+    style={
+      Object {
+        "marginBottom": "20px",
+      }
+    }
   >
-    Effect: 
-    mockEffect
+    <div
+      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gajwsF Box-sc-6sssmg-0 inpIDs"
+      style={
+        Object {
+          "backgroundColor": "generation-",
+        }
+      }
+    >
+      <div
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+      >
+        gen 
+      </div>
+    </div>
   </div>
-  <img
-    className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
-    src="mockImageUrl"
-  />
+  <span
+    className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+    display="block"
+    style={
+      Object {
+        "color": undefined,
+        "display": "block",
+      }
+    }
+  >
+    mockEffect
+  </span>
+  <div
+    className="Box-sc-6sssmg-0 inpIDs"
+    style={
+      Object {
+        "marginTop": "40px",
+      }
+    }
+  >
+    <h5
+      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+    >
+      Attributes
+    </h5>
+    <span
+      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      display="block"
+      style={
+        Object {
+          "color": undefined,
+          "display": "block",
+        }
+      }
+    >
+      <svg
+        className="styled-huruki-0 gxxWxN Box-sc-6sssmg-0 inpIDs"
+        color="generation-"
+        role="img"
+        size={1}
+        style={
+          Object {
+            "color": "generation-",
+            "marginRight": "5px",
+            "size": 1,
+          }
+        }
+        viewBox="0 0 512 512"
+      >
+        <title>
+          check
+        </title>
+        <path
+          d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+      mockAttributeName
+    </span>
+  </div>
 </div>
 `;
