@@ -1,7 +1,7 @@
-### A simple pokedex
+## A simple pokedex
 [Live preview](https://thepenskefile.github.io/pokedex/)
 
-## Pokedex information includes ##
+### Pokedex information includes ##
 * Pokemon
 * Berries
 * Locations
