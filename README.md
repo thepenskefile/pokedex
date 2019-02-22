@@ -1,6 +1,9 @@
 ## A simple pokedex
 [Live demo](https://thepenskefile.github.io/pokedex/)
 
+* [Fannypack UI kit](https://fannypack.style/)
+* [PokeApi](https://pokeapi.co/)
+
 ### Pokedex information includes ##
 * Pokemon
 * Berries
