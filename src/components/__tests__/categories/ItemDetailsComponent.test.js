@@ -7,7 +7,9 @@ const defaultProps = {
     name: 'mockName',
     fling_power: 'mockFlingPower',
     effect_entries: [{ effect: 'mockEffect' }],
-    sprites: { default: 'mockImageUrl' }
+    sprites: { default: 'mockImageUrl' },
+    game_indices: [{ game_index: '1', generation: { name: 'mockGenerationName', url: 'mockUrl/1' } }],
+    attributes: [{ name: 'mockAttributeName' }]
   }
 };
 it('renders correctly', () => {

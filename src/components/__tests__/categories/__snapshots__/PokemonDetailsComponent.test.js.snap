@@ -3,14 +3,18 @@
 exports[`renders correctly 1`] = `
 <div
   className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+  height="70vh"
   style={
     Object {
+      "height": "70vh",
       "marginLeft": "10px",
+      "overflowX": "hidden",
+      "overflowY": "scroll",
       "textAlign": "left",
-      "width": "96%",
+      "width": "100%",
     }
   }
-  width="96%"
+  width="100%"
 >
   <div
     className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"

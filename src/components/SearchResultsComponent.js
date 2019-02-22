@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import SearchListItem from './SearchListItem';
 import { CONTENT_CATEGORY_TYPES } from '../_types/content_category_types';
-import { Spinner, Container, Box, Group, Input, Button, palette, styled } from 'fannypack';
+import { Spinner, Container, Box, Group, Input, Button, Flex, palette, styled } from 'fannypack';
 
 const SearchButton = styled(Button)`
   border: none;
@@ -11,19 +11,6 @@ const SearchButton = styled(Button)`
   border-radius: 0;
   &:hover {
     background-color: ${palette('white600')};
-  }
-  &:focus {
-    box-shadow: none;
-    outline: none;
-  }
-`;
-
-const CancelButton = styled(Button)`
-  border: none;
-  background-color: ${palette('white700')};
-  border-radius: 0;
-  &:hover {
-    background-color: ${palette('white700')};
   }
   &:focus {
     box-shadow: none;
@@ -117,27 +104,33 @@ export default class SearchResultsComponent extends Component<Props, State> {
         <form onSubmit={this.handleSubmitSearch}>
           <Group>
             <SearchInput
-              elementRef={this.inputSearchText}
+              inputRef={this.inputSearchText}
               isFullWidth
               name="search"
               onChange={this.handleInputSearchText}
               placeholder={`search for ${CONTENT_CATEGORY_TYPES[category]}`}
+              after={this.state.hasInputText && <Input.Icon icon="solid-times" onClick={this.handleClearSearchText} />}
             />
-            {this.state.hasInputText && <CancelButton onClick={this.handleClearSearchText}>X</CancelButton>}
             <SearchButton type="submit">SEARCH</SearchButton>
           </Group>
         </form>
-        <Box
+        <Flex
           ref={this.searchBar}
-          maxHeight="100vh"
+          flexDirection="column"
+          justifyContent="space-between"
+          height="calc(100vh - 240px)"
           marginTop="10px"
           onScroll={this.handleScroll}
           overflowX="hidden"
           overflowY={this.state.enableScroll ? 'scroll' : 'hidden'}
         >
-          {isLoading && <Spinner size="large" />}
+          {isLoading && (
+            <Box textAlign="center">
+              <Spinner margin="5px" marginTop="20px" textAlign="center" size="large" color="text" />
+            </Box>
+          )}
           {isSuccess && (
-            <Box backgroundColor="white">
+            <Box backgroundColor="white" textAlign="left">
               {response.results.length === 0 && <div>No results</div>}
               {response.results &&
                 response.results.map((item, index) => (
@@ -153,7 +146,7 @@ export default class SearchResultsComponent extends Component<Props, State> {
           )}
           {/* $FlowFixMe */}
           {isError && <Box>No items found with the name {this.inputSearchText.current.value}</Box>}
-        </Box>
+        </Flex>
       </Container>
     );
   };

@@ -17,7 +17,7 @@ export default class SearchContainer extends Component<Props, State> {
   state = { singleFetch: true };
   fetchItems = async () => {
     const { category } = this.props;
-    const response = await axios.get(`https://pokeapi.co/api/v2/${category}/`);
+    const response = await axios.get(`https://pokeapi.co/api/v2/${category}/?limit=30`);
     return response.data;
   };
 

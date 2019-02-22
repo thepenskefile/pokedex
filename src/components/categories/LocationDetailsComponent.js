@@ -1,8 +1,8 @@
 // @flow
 
-import React, { Fragment } from 'react';
+import React from 'react';
 // import { Link } from '@reach/router';
-import { Container, Box } from 'fannypack';
+import { Container, Flex, Heading, Set, Text, Tag } from 'fannypack';
 
 type Props = {
   data: Object
@@ -10,10 +10,24 @@ type Props = {
 
 const LocationDetailsComponent = ({ data }: Props) => (
   <Container textAlign="left" marginLeft="10px" width="96%">
-    <Fragment>
-      <Box>Name: {data.name}</Box>
-      <Box>Region: {data.region.name}</Box>
-    </Fragment>
+    <Flex alignItems="flex-start" marginBottom="10px">
+      <Heading>{data.name.charAt(0).toUpperCase() + data.name.slice(1)}</Heading>
+    </Flex>
+    <Set marginBottom="20px" spacing="major-2" display="block">
+      <Text use="strong">Region: </Text>
+      {data.region.name}
+    </Set>
+    <Set marginBottom="20px">
+      {data.game_indices.map((index, i) => (
+        <Tag
+          key={index.generation.url.replace(/\D/g, '').substring(1)}
+          backgroundColor={`generation-${index.generation.url.replace(/\D/g, '').substring(1)}`}
+          size="medium"
+        >
+          {`gen ${index.generation.url.replace(/\D/g, '').substring(1)}`}
+        </Tag>
+      ))}
+    </Set>
   </Container>
 );
 
