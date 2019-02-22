@@ -1,5 +1,5 @@
 ## A simple pokedex
-[Live preview](https://thepenskefile.github.io/pokedex/)
+[Live demo](https://thepenskefile.github.io/pokedex/)
 
 ### Pokedex information includes ##
 * Pokemon
