@@ -1,3 +1,14 @@
+### A simple pokedex
+[Live preview](https://thepenskefile.github.io/pokedex/)
+
+## Pokedex information includes ##
+* Pokemon
+* Berries
+* Locations
+* Items
+* Moves
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
