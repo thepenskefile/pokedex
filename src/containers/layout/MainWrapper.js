@@ -14,6 +14,12 @@ const Main = styled(Box)`
   }
 `;
 
+const StyledColumn = styled(Column)`
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+`;
+
 type Props = { children: Node };
 type State = { searchCategory: string };
 
@@ -33,12 +39,12 @@ export default class MainWrapper extends Component<Props, State> {
         <ContentCategoryComponent selectCategory={this.selectCategory} />
         <Divider />
         <Columns marginTop="20px" marginBottom="0px" isGapless>
-          <Column spread={3} backgroundColor="white" paddingTop="10px">
+          <StyledColumn spread={3} backgroundColor="white" paddingTop="10px">
             <SearchContainer category={this.state.searchCategory} />
-          </Column>
-          <Column padding="20px" backgroundColor="white">
+          </StyledColumn>
+          <StyledColumn padding="20px" backgroundColor="white">
             {children}
-          </Column>
+          </StyledColumn>
         </Columns>
       </Main>
     );
