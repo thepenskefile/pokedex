@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+  className="styled-sc-144wh3b-0 iUlbjp sc-bdVaJa eUADIL"
   style={
     Object {
       "marginLeft": "10px",
@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
   width="96%"
 >
   <div
-    className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"
+    className="sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
     style={
       Object {
         "alignItems": "center",
@@ -22,13 +22,13 @@ exports[`renders correctly 1`] = `
     }
   >
     <h1
-      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+      className="heading styled-cya4kb-0 iFEcqF sc-htoDjs hDVFrt sc-bdVaJa eUADIL"
     >
       MockName
     </h1>
   </div>
   <div
-    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    className="styled-sc-18btutf-0 eSjZSA sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
     display="block"
     spacing="major-2"
     style={
@@ -39,7 +39,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <strong
-      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      className="styled-sc-9qokh7-0 skDAJ sc-bdVaJa eUADIL"
       style={
         Object {
           "color": undefined,
@@ -50,7 +50,7 @@ exports[`renders correctly 1`] = `
     </strong>
     mockContestTypeName
     <strong
-      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      className="styled-sc-9qokh7-0 skDAJ sc-bdVaJa eUADIL"
       style={
         Object {
           "color": undefined,
@@ -62,7 +62,7 @@ exports[`renders correctly 1`] = `
     mockDamageClassName
   </div>
   <div
-    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    className="styled-sc-18btutf-0 eSjZSA sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
     spacing="minor-2"
     style={
       Object {
@@ -71,7 +71,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gajwsF Box-sc-6sssmg-0 inpIDs"
+      className="styled__Tag-sc-1g01kou-2 iIJwdg sc-EHOje llGVFe sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
       style={
         Object {
           "backgroundColor": "mockTypeName",
@@ -79,14 +79,14 @@ exports[`renders correctly 1`] = `
       }
     >
       <div
-        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz sc-bdVaJa eUADIL"
       >
         mockTypeName
       </div>
     </div>
   </div>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="sc-bdVaJa eUADIL"
     style={
       Object {
         "marginTop": "40px",
@@ -94,7 +94,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="styled-otaduv-0 wkSBA Box-sc-6sssmg-0 inpIDs"
+      className="styled-otaduv-0 wkSBA sc-bdVaJa eUADIL"
       style={
         Object {
           "marginBottom": "20px",
@@ -103,7 +103,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <div
-        className="styled__Column-sc-1lmgd0f-0 giZWgM Box-sc-6sssmg-0 inpIDs"
+        className="styled__Column-sc-1lmgd0f-0 giZWgM sc-bdVaJa eUADIL"
         display="inline-block"
         style={
           Object {
@@ -112,23 +112,23 @@ exports[`renders correctly 1`] = `
         }
       >
         <div
-          className="Box-sc-6sssmg-0 inpIDs"
+          className="sc-bdVaJa eUADIL"
         >
           <svg
-            className="sc-bdVaJa fJZkWb"
+            className="sc-kvZOFW bpqqZN"
             viewBox="0 0 36 36"
           >
             <path
-              className="sc-bwzfXH fUxNdF"
+              className="sc-hqyNC fvotJr"
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <path
-              className="sc-bxivhb dsVxfS"
+              className="sc-dNLxif cEFYnM"
               color={[Function]}
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <text
-              className="sc-htpNat jJPiwm"
+              className="sc-jbKcbu kEedeD"
               x="18"
               y="20.35"
             >
@@ -136,7 +136,7 @@ exports[`renders correctly 1`] = `
             </text>
           </svg>
           <div
-            className="Box-sc-6sssmg-0 inpIDs"
+            className="sc-bdVaJa eUADIL"
             style={
               Object {
                 "textAlign": "center",
@@ -148,7 +148,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="styled__Column-sc-1lmgd0f-0 giZWgM Box-sc-6sssmg-0 inpIDs"
+        className="styled__Column-sc-1lmgd0f-0 giZWgM sc-bdVaJa eUADIL"
         display="inline-block"
         style={
           Object {
@@ -157,23 +157,23 @@ exports[`renders correctly 1`] = `
         }
       >
         <div
-          className="Box-sc-6sssmg-0 inpIDs"
+          className="sc-bdVaJa eUADIL"
         >
           <svg
-            className="sc-bdVaJa fJZkWb"
+            className="sc-kvZOFW bpqqZN"
             viewBox="0 0 36 36"
           >
             <path
-              className="sc-bwzfXH fUxNdF"
+              className="sc-hqyNC fvotJr"
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <path
-              className="sc-bxivhb MebOY"
+              className="sc-dNLxif cSwVzV"
               color={[Function]}
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <text
-              className="sc-htpNat jJPiwm"
+              className="sc-jbKcbu kEedeD"
               x="18"
               y="20.35"
             >
@@ -181,7 +181,7 @@ exports[`renders correctly 1`] = `
             </text>
           </svg>
           <div
-            className="Box-sc-6sssmg-0 inpIDs"
+            className="sc-bdVaJa eUADIL"
             style={
               Object {
                 "textAlign": "center",
@@ -193,7 +193,7 @@ exports[`renders correctly 1`] = `
         </div>
       </div>
       <div
-        className="styled__Column-sc-1lmgd0f-0 giZWgM Box-sc-6sssmg-0 inpIDs"
+        className="styled__Column-sc-1lmgd0f-0 giZWgM sc-bdVaJa eUADIL"
         display="inline-block"
         style={
           Object {
@@ -202,23 +202,23 @@ exports[`renders correctly 1`] = `
         }
       >
         <div
-          className="Box-sc-6sssmg-0 inpIDs"
+          className="sc-bdVaJa eUADIL"
         >
           <svg
-            className="sc-bdVaJa fJZkWb"
+            className="sc-kvZOFW bpqqZN"
             viewBox="0 0 36 36"
           >
             <path
-              className="sc-bwzfXH fUxNdF"
+              className="sc-hqyNC fvotJr"
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <path
-              className="sc-bxivhb umeSt"
+              className="sc-dNLxif bPgAYh"
               color={[Function]}
               d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
             <text
-              className="sc-htpNat jJPiwm"
+              className="sc-jbKcbu kEedeD"
               x="18"
               y="20.35"
             >
@@ -226,7 +226,7 @@ exports[`renders correctly 1`] = `
             </text>
           </svg>
           <div
-            className="Box-sc-6sssmg-0 inpIDs"
+            className="sc-bdVaJa eUADIL"
             style={
               Object {
                 "textAlign": "center",

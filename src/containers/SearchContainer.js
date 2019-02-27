@@ -1,63 +1,77 @@
 // @flow
 import React, { Component } from 'react';
 import SearchResultsComponent from '../components/SearchResultsComponent';
-import Loads from 'react-loads';
 import axios from 'axios';
-import { Box } from 'fannypack';
+import Loads from 'react-loads';
+import { Box, Spinner } from 'fannypack';
+import { navigate } from '@reach/router';
+import { CONTENT_CATEGORY_TYPES } from '../_types/content_category_types';
 
 type Props = {
   category: string
 };
 
-type State = {
-  singleFetch: boolean
-};
+export default class SearchContainer extends Component<Props> {
+  loadOptions = async ({ page, searchText }: { page: number, searchText: string }) => {
+    const limit = 30;
+    const response = await axios.get(
+      `https://pokeapi.co/api/v2/${this.props.category}/?limit=${limit}&offset=${limit * (page - 1)}`
+    );
+    let options = null;
+    if (searchText) {
+      options = response.data.results.map((item: any) => {
+        if (item.name.includes(searchText)) return { key: item.name, label: item.name, value: item };
+      });
+      options = options.filter(function(element) {
+        return element !== undefined;
+      });
 
-export default class SearchContainer extends Component<Props, State> {
-  state = { singleFetch: true };
-  fetchItems = async () => {
-    const { category } = this.props;
-    const response = await axios.get(`https://pokeapi.co/api/v2/${category}/?limit=30`);
-    return response.data;
-  };
+      while (options.length === 0) {
+        const searchPagesLimit = 300;
 
-  fetchMoreItems = async (url: string, prevItems: Array<Object>) => {
-    const { category } = this.props;
-    if (url.length > 0) {
-      const response = await axios.get(url);
-      if (prevItems.length !== 0) {
-        const newItems = [...prevItems, ...response.data.results];
-        response.data.results = newItems;
-        this.setState({ singleFetch: false });
-        return response.data;
+        var searchPages = page;
+        var data = await axios.get(
+          `https://pokeapi.co/api/v2/${this.props.category}/?limit=${searchPagesLimit}&offset=${searchPagesLimit *
+            (searchPages++ - 1)}`
+        );
+
+        options = data.data.results.map((item: any) => {
+          if (item.name.includes(searchText)) return { key: item.name, label: item.name, value: item };
+        });
+        options = options.filter(function(element) {
+          return element !== undefined;
+        });
+        if (data.next === undefined) {
+          break;
+        }
       }
-      this.setState({ singleFetch: false });
-      return { results: [response.data] };
+      // $FlowFixMe
+      options = options.filter(function(element) {
+        return element !== undefined;
+      });
+    } else {
+      options = response.data.results.map((item: any) => ({ key: item.name, label: item.name, value: item }));
     }
-    const response = await axios.get(`https://pokeapi.co/api/v2/${category}/`);
-    this.setState({ singleFetch: true });
-    return response.data;
+    return { options };
   };
 
+  handleClickMenuItem = (id: string) => {
+    navigate(`/${CONTENT_CATEGORY_TYPES[this.props.category]}/${id}`);
+  };
   render = () => {
-    const { category } = this.props;
     return (
-      <Box marginLeft="7px" marginRight="7px">
-        <Loads contextKey={category} loadOnMount load={this.fetchItems} update={this.fetchMoreItems}>
-          {({ update, isLoading, isSuccess, isError, error, response }) => (
-            <SearchResultsComponent
-              response={response}
-              isLoading={isLoading}
-              isSuccess={isSuccess}
-              isError={isError}
-              error={error}
-              category={category}
-              update={update}
-              singleFetch={this.state.singleFetch}
-            />
-          )}
-        </Loads>
-      </Box>
+      <Loads contextKey={this.props.category}>
+        {({ isLoading }) => (
+          <Box marginLeft="7px" marginRight="7px">
+            {isLoading && (
+              <Box textAlign="center">
+                <Spinner margin="5px" marginTop="20px" textAlign="center" size="large" color="text" />
+              </Box>
+            )}
+            <SearchResultsComponent loadOptions={this.loadOptions} onClickMenuItem={this.handleClickMenuItem} />
+          </Box>
+        )}
+      </Loads>
     );
   };
 }
