@@ -1,7 +1,6 @@
 // @flow
 
 import React, { Fragment } from 'react';
-// import { Link } from '@reach/router';
 import { Image, Container, Box, Flex, Heading, Text, Set, Icon, Tag } from 'fannypack';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 

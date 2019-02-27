@@ -1,24 +1,9 @@
 // @flow
 
 import React, { Component } from 'react';
-import SearchListItem from './SearchListItem';
-import { CONTENT_CATEGORY_TYPES } from '../_types/content_category_types';
-import { Spinner, Container, Box, Group, Input, Button, Flex, palette, styled } from 'fannypack';
+import { Container, Box, SelectMenu, Columns, Column, palette, styled } from 'fannypack';
 
-const SearchButton = styled(Button)`
-  border: none;
-  background-color: ${palette('white800')};
-  border-radius: 0;
-  &:hover {
-    background-color: ${palette('white600')};
-  }
-  &:focus {
-    box-shadow: none;
-    outline: none;
-  }
-`;
-
-const SearchInput = styled(Input)`
+const StyledSelectMenu = styled(SelectMenu)`
   & input {
     border: none;
     outline: none;
@@ -26,127 +11,41 @@ const SearchInput = styled(Input)`
     border-radius: 0;
     box-shadow: none;
   }
-  &:focus {
-    box-shadow: none;
-    outline: none;
-    border: none;
+
+  & div:nth-child(2) {
+    max-height: 100vh;
   }
 `;
 
 type Props = {
-  response: Object,
-  isLoading: Boolean,
-  isSuccess: Boolean,
-  isError: Boolean,
-  error: Object,
-  category: string,
-  update: Function,
-  singleFetch: boolean
+  loadOptions: Function,
+  onClickMenuItem: Function
 };
 
-type State = {
-  enableScroll: boolean,
-  hasInputText: boolean
-};
-
-export default class SearchResultsComponent extends Component<Props, State> {
-  state = {
-    enableScroll: true,
-    hasInputText: false
-  };
-  // $FlowFixMe
-  searchBar = React.createRef();
-  // $FlowFixMe
-  inputSearchText = React.createRef();
-
-  handleScroll = () => {
-    const { update, response } = this.props;
-    if (this.searchBar.current) {
-      var maxScrollPositionReached =
-        this.searchBar.current.scrollHeight - this.searchBar.current.scrollTop === this.searchBar.current.clientHeight;
-
-      if (maxScrollPositionReached) {
-        this.setState({ enableScroll: false });
-        update(response.next, response.results);
-        this.setState({ enableScroll: true });
-      }
-    }
-  };
-
-  handleSubmitSearch = (e: any) => {
-    e.preventDefault();
-    const { category, update } = this.props;
-    update(`https://pokeapi.co/api/v2/${category}/${e.target.search.value}/`, []);
-  };
-
-  handleInputSearchText = (e: any) => {
-    if (e.target.value) {
-      this.setState({ hasInputText: true });
-    } else {
-      this.setState({ hasInputText: false });
-    }
-  };
-
-  handleClearSearchText = () => {
-    const { update, singleFetch } = this.props;
-    // $FlowFixMe
-    this.inputSearchText.current.value = '';
-    if (!singleFetch) {
-      update();
-    }
-    this.setState({ hasInputText: false });
-  };
-
+export default class SearchResultsComponent extends Component<Props> {
   render = () => {
-    const { response, isLoading, isSuccess, isError, error, category } = this.props;
+    const { loadOptions, onClickMenuItem } = this.props;
     return (
       <Container textAlign="left" marginTop="10px">
-        <form onSubmit={this.handleSubmitSearch}>
-          <Group>
-            <SearchInput
-              inputRef={this.inputSearchText}
-              isFullWidth
-              name="search"
-              onChange={this.handleInputSearchText}
-              placeholder={`search for ${CONTENT_CATEGORY_TYPES[category]}`}
-              after={this.state.hasInputText && <Input.Icon icon="solid-times" onClick={this.handleClearSearchText} />}
-            />
-            <SearchButton type="submit">SEARCH</SearchButton>
-          </Group>
-        </form>
-        <Flex
-          ref={this.searchBar}
-          flexDirection="column"
-          justifyContent="space-between"
-          height="calc(100vh - 240px)"
-          marginTop="10px"
-          onScroll={this.handleScroll}
-          overflowX="hidden"
-          overflowY={this.state.enableScroll ? 'scroll' : 'hidden'}
-        >
-          {isLoading && (
-            <Box textAlign="center">
-              <Spinner margin="5px" marginTop="20px" textAlign="center" size="large" color="text" />
+        <StyledSelectMenu
+          renderOption={option => (
+            <Box
+              onClick={() =>
+                onClickMenuItem(option.value.url ? option.value.url.replace(/\D/g, '').substring(1) : option.value.id)
+              }
+              padding="5px"
+            >
+              <Columns minBreakpoint="mobile">
+                <Column spread={2}>
+                  {option.value.url ? option.value.url.replace(/\D/g, '').substring(1) : option.value.id}
+                </Column>
+                <Column spread={10}>{option.value.name.charAt(0).toUpperCase() + option.value.name.slice(1)}</Column>
+              </Columns>
             </Box>
           )}
-          {isSuccess && (
-            <Box backgroundColor="white" textAlign="left">
-              {response.results.length === 0 && <div>No results</div>}
-              {response.results &&
-                response.results.map((item, index) => (
-                  <SearchListItem
-                    key={item.name}
-                    name={item.name}
-                    id={item.url ? item.url.replace(/\D/g, '').substring(1) : item.id}
-                    index={++index}
-                    category={category}
-                  />
-                ))}
-            </Box>
-          )}
-          {/* $FlowFixMe */}
-          {isError && <Box>No items found with the name {this.inputSearchText.current.value}</Box>}
-        </Flex>
+          isSearchable
+          loadOptions={loadOptions}
+        />
       </Container>
     );
   };

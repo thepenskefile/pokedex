@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="styled-sc-144wh3b-0 iUlbjp Box-sc-6sssmg-0 inpIDs"
+  className="styled-sc-144wh3b-0 iUlbjp sc-bdVaJa eUADIL"
   style={
     Object {
       "marginLeft": "10px",
@@ -13,7 +13,7 @@ exports[`renders correctly 1`] = `
   width="96%"
 >
   <div
-    className="Flex-sp5dv1-0 ddZvmG Box-sc-6sssmg-0 inpIDs"
+    className="sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
     style={
       Object {
         "alignItems": "center",
@@ -21,17 +21,17 @@ exports[`renders correctly 1`] = `
     }
   >
     <h1
-      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+      className="heading styled-cya4kb-0 iFEcqF sc-htoDjs hDVFrt sc-bdVaJa eUADIL"
     >
       MockName
     </h1>
     <img
-      className="styled-sc-19nzt74-0 ivQgwC Image-idye9d-0 dRjldG Box-sc-6sssmg-0 inpIDs"
+      className="styled-sc-19nzt74-0 ivQgwC sc-eHgmQL ljDLPK sc-bdVaJa eUADIL"
       src="mockImageUrl"
     />
   </div>
   <div
-    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    className="styled-sc-18btutf-0 eSjZSA sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
     display="block"
     spacing="major-2"
     style={
@@ -42,7 +42,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <strong
-      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      className="styled-sc-9qokh7-0 skDAJ sc-bdVaJa eUADIL"
       style={
         Object {
           "color": undefined,
@@ -53,7 +53,7 @@ exports[`renders correctly 1`] = `
     </strong>
     mockFlingPower
     <strong
-      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      className="styled-sc-9qokh7-0 skDAJ sc-bdVaJa eUADIL"
       style={
         Object {
           "color": undefined,
@@ -64,7 +64,7 @@ exports[`renders correctly 1`] = `
     </strong>
   </div>
   <div
-    className="Flex-sp5dv1-0 styled-sc-18btutf-0 kkaizR Box-sc-6sssmg-0 inpIDs"
+    className="styled-sc-18btutf-0 eSjZSA sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
     spacing="minor-2"
     style={
       Object {
@@ -73,7 +73,7 @@ exports[`renders correctly 1`] = `
     }
   >
     <div
-      className="Flex-sp5dv1-0 InlineFlex-sc-129poqw-0 styled__Tag-sc-1g01kou-2 gajwsF Box-sc-6sssmg-0 inpIDs"
+      className="styled__Tag-sc-1g01kou-2 iIJwdg sc-EHOje llGVFe sc-ifAKCX jEBRGJ sc-bdVaJa eUADIL"
       style={
         Object {
           "backgroundColor": "generation-",
@@ -81,14 +81,14 @@ exports[`renders correctly 1`] = `
       }
     >
       <div
-        className="styled__TagContent-sc-1g01kou-1 iuaGjz Box-sc-6sssmg-0 inpIDs"
+        className="styled__TagContent-sc-1g01kou-1 iuaGjz sc-bdVaJa eUADIL"
       >
         gen 
       </div>
     </div>
   </div>
   <span
-    className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+    className="styled-sc-9qokh7-0 skDAJ sc-bdVaJa eUADIL"
     display="block"
     style={
       Object {
@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
     mockEffect
   </span>
   <div
-    className="Box-sc-6sssmg-0 inpIDs"
+    className="sc-bdVaJa eUADIL"
     style={
       Object {
         "marginTop": "40px",
@@ -108,12 +108,12 @@ exports[`renders correctly 1`] = `
     }
   >
     <h5
-      className="heading styled-cya4kb-0 iFEcqF Heading-uhfcou-0 bnhnuY Box-sc-6sssmg-0 inpIDs"
+      className="heading styled-cya4kb-0 iFEcqF sc-htoDjs hDVFrt sc-bdVaJa eUADIL"
     >
       Attributes
     </h5>
     <span
-      className="styled-sc-9qokh7-0 skDAJ Box-sc-6sssmg-0 inpIDs"
+      className="styled-sc-9qokh7-0 skDAJ sc-bdVaJa eUADIL"
       display="block"
       style={
         Object {
@@ -123,7 +123,7 @@ exports[`renders correctly 1`] = `
       }
     >
       <svg
-        className="styled-huruki-0 gxxWxN Box-sc-6sssmg-0 inpIDs"
+        className="styled-huruki-0 gxxWxN sc-bdVaJa eUADIL"
         color="generation-"
         role="img"
         size={1}

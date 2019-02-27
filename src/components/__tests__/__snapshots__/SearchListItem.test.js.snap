@@ -6,18 +6,18 @@ exports[`renders correctly 1`] = `
   onClick={[Function]}
 >
   <div
-    className="sc-bdVaJa inEjad Box-sc-6sssmg-0 inpIDs"
+    className="sc-kvZOFW gFIbtn sc-bdVaJa eUADIL"
   >
     <div
-      className="styled-otaduv-0 wkSBA Box-sc-6sssmg-0 inpIDs"
+      className="styled-otaduv-0 wkSBA sc-bdVaJa eUADIL"
     >
       <div
-        className="styled__Column-sc-1lmgd0f-0 esYmZI Box-sc-6sssmg-0 inpIDs"
+        className="styled__Column-sc-1lmgd0f-0 esYmZI sc-bdVaJa eUADIL"
       >
         mockIndex
       </div>
       <div
-        className="styled__Column-sc-1lmgd0f-0 RTVYE Box-sc-6sssmg-0 inpIDs"
+        className="styled__Column-sc-1lmgd0f-0 RTVYE sc-bdVaJa eUADIL"
       >
         MockName
       </div>
