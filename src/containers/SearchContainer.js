@@ -17,7 +17,7 @@ export default class SearchContainer extends Component<Props> {
     const response = await axios.get(
       `https://pokeapi.co/api/v2/${this.props.category}/?limit=${limit}&offset=${limit * (page - 1)}`
     );
-    let options = null;
+    let options;
     if (searchText) {
       options = response.data.results.map((item: any) => {
         if (item.name.includes(searchText)) return { key: item.name, label: item.name, value: item };
@@ -25,23 +25,24 @@ export default class SearchContainer extends Component<Props> {
       options = options.filter(function(element) {
         return element !== undefined;
       });
+      let searchPages = page;
 
       while (options.length === 0) {
         const searchPagesLimit = 300;
 
-        var searchPages = page;
         var data = await axios.get(
           `https://pokeapi.co/api/v2/${this.props.category}/?limit=${searchPagesLimit}&offset=${searchPagesLimit *
             (searchPages++ - 1)}`
         );
 
         options = data.data.results.map((item: any) => {
-          if (item.name.includes(searchText)) return { key: item.name, label: item.name, value: item };
+          if (item.name.toLowerCase().includes(searchText.toLowerCase()))
+            return { key: item.name, label: item.name, value: item };
         });
         options = options.filter(function(element) {
           return element !== undefined;
         });
-        if (data.next === undefined) {
+        if (data.data.next === null) {
           break;
         }
       }
